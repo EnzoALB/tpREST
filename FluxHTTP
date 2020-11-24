@@ -1,0 +1,37 @@
+No.     Time           Source                Destination           Protocol Length Info
+     52 10.781275150   10.202.0.180          10.202.255.253        HTTP     147    GET /relay/0?turn=on HTTP/1.1 
+
+Frame 52: 147 bytes on wire (1176 bits), 147 bytes captured (1176 bits) on interface 0
+Ethernet II, Src: HewlettP_2c:8c:d1 (ec:8e:b5:2c:8c:d1), Dst: Espressi_6a:65:34 (ec:fa:bc:6a:65:34)
+Internet Protocol Version 4, Src: 10.202.0.180, Dst: 10.202.255.253
+Transmission Control Protocol, Src Port: 37360, Dst Port: 80, Seq: 1, Ack: 1, Len: 93
+Hypertext Transfer Protocol
+    GET /relay/0?turn=on HTTP/1.1\r\n
+    Host: 10.202.255.253\r\n
+    User-Agent: curl/7.64.0\r\n
+    Accept: */*\r\n
+    \r\n
+    [Full request URI: http://10.202.255.253/relay/0?turn=on]
+    [HTTP request 1/1]
+    [Response in frame: 53]
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 10.796757288   10.202.255.253        10.202.0.180          HTTP     290    HTTP/1.1 200 OK  (application/json)
+
+Frame 53: 290 bytes on wire (2320 bits), 290 bytes captured (2320 bits) on interface 0
+Ethernet II, Src: Espressi_6a:65:34 (ec:fa:bc:6a:65:34), Dst: HewlettP_2c:8c:d1 (ec:8e:b5:2c:8c:d1)
+Internet Protocol Version 4, Src: 10.202.255.253, Dst: 10.202.0.180
+Transmission Control Protocol, Src Port: 80, Dst Port: 37360, Seq: 1, Ack: 94, Len: 236
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+    Server: Mongoose/6.11\r\n
+    Connection: close\r\n
+    Content-Type: application/json\r\n
+    Content-Length: 122\r\n
+    \r\n
+    [HTTP response 1/1]
+    [Time since request: 0.015482138 seconds]
+    [Request in frame: 52]
+    [Request URI: http://10.202.255.253/relay/0?turn=on]
+    File Data: 122 bytes
+JavaScript Object Notation: application/json
